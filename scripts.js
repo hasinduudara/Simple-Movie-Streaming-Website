@@ -4,7 +4,7 @@
 document.querySelectorAll('.movie-card').forEach(card => {
     card.addEventListener('click', () => {
         const movieTitle = card.querySelector('.card-title').textContent;
-        alert(`You clicked on ${movieTitle}`);
+        
     });
 });
 
@@ -13,7 +13,7 @@ document.querySelectorAll('.watch-button').forEach(button => {
     button.addEventListener('click', (event) => {
         event.stopPropagation(); // Prevent the card click event
         const movieTitle = button.getAttribute('data-movie');
-        alert(`Playing ${movieTitle}`);
+        
         // Add logic to play the movie
     });
 });
@@ -23,7 +23,7 @@ document.querySelectorAll('.download-button').forEach(button => {
     button.addEventListener('click', (event) => {
         event.stopPropagation(); // Prevent the card click event
         const movieTitle = button.getAttribute('data-movie');
-        alert(`Downloading ${movieTitle}`);
+        
         // Add logic to download the movie
     });
 });
